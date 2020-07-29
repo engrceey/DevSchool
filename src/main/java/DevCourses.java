@@ -5,7 +5,6 @@ public class DevCourses {
 
 
     public String getCourse() {
-        System.out.println(this.course);
         return course;
     }
 
