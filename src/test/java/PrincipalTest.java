@@ -21,6 +21,7 @@ class PrincipalTest {
     }
 
     @Test
+    @DisplayName("Principal Expels student based on Character")
     void expelStudent() {
         DevStudent devStudent = new DevStudent("John",23,"008",true);
         boolean flag = devStudent.isCharacter();

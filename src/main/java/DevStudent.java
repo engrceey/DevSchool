@@ -12,16 +12,22 @@ public class DevStudent extends PersonBio{
         this.Department = dept;
     }
 
+//    A method that enables students to take a course from available courses
     public String takeAcourse(String course) throws Exception {
-        DevCourses devCourses = new DevCourses();
-        devCourses.setCourse(course);
-        return devCourses.getCourse();
+        try {
+            DevCourses devCourses = new DevCourses();
+            devCourses.setCourse(course);
+            return devCourses.getCourse();
+        }catch (Exception e) {
+            return "Course not available";
+        }
     }
 
     public void setCharacter(boolean character) {
         this.character = character;
     }
 
+//    Method that enables the student to change character
     public boolean isCharacter() {
         return character;
     }

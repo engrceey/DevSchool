@@ -9,6 +9,7 @@ public class DevCourses {
         return course;
     }
 
+//    Created a method that houses courses available
     public void setCourse(String course) throws Exception {
         ArrayList<String> list = new ArrayList<>();
         list.add("Java");
@@ -21,7 +22,7 @@ public class DevCourses {
         if(list.contains(course)){
             this.course = course;
         }else {
-            throw new Exception("Not Available");
+            throw new Exception("Course not Available");
         }
     }
 }

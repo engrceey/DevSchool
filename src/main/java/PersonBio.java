@@ -1,4 +1,6 @@
 public class PersonBio {
+//    A Base class that carries all common states of classes
+
     private String name;
     private int age;
     private String id;

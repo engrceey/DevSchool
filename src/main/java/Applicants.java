@@ -1,19 +1,22 @@
 public class Applicants extends PersonBio{
     private int testScore;
 
-
     public Applicants(String name, int age, String id, int testScore) {
         super(name, age, id);
         this.testScore = testScore;
     }
 
-
+//    A method to know if admitted or Not
     public String knowYourAdmissionStatus(){
         if(testScore >= 60 && super.getAge() >= 18){
             return "Congrats you are now a Student";
         }else{
             return "Not admitted, Please Try again";
         }
+    }
+
+    public int getTestScore() {
+        return testScore;
     }
 
     @Override
