@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class PrincipalTest {
 
     @Test
-    @DisplayName("")
+    @DisplayName("Principal creates classes")
     void createClass() {
         SchoolClasses schoolClasses = new SchoolClasses();
         assertEquals("Frontend Created",schoolClasses.createClasses("Frontend"));
@@ -14,6 +14,7 @@ class PrincipalTest {
     }
 
     @Test
+    @DisplayName("Principal Admits applicant")
     void admitApplicant() {
         Applicants applicants = new Applicants("John",19,"007",67);
         assertEquals("Congrats you are now a Student",applicants.knowYourAdmissionStatus());
@@ -22,8 +23,7 @@ class PrincipalTest {
     @Test
     void expelStudent() {
         DevStudent devStudent = new DevStudent("John",23,"008",true);
-//        assertEquals("Expeled",devStudent.isCharacter());
-        assertEquals(true,devStudent.isCharacter());
-
+        boolean flag = devStudent.isCharacter();
+        assertEquals(true,flag);
     }
 }

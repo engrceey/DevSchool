@@ -10,7 +10,6 @@ public class Applicants extends PersonBio{
 
     public String knowYourAdmissionStatus(){
         if(testScore >= 60 && super.getAge() >= 18){
-            System.out.println("working");
             return "Congrats you are now a Student";
         }else{
             return "Not admitted, Please Try again";
